@@ -1045,8 +1045,9 @@ class DuplicateFinderApp(tk.Tk):
     def _hdr_kpi(self, parent: tk.Widget, label: str, value: str) -> tk.Label:
         frm = tk.Frame(parent, bg=C["border"], padx=1, pady=1)
         frm.pack(side="right", padx=6, pady=8)
-        inner = tk.Frame(frm, bg=C["panel"], padx=12, pady=4)
+        inner = tk.Frame(frm, bg=C["panel"], width=120, height=55)
         inner.pack()
+        inner.pack_propagate(False)
         tk.Label(
             inner, text=label, font=FONT_SMALL,
             fg=C["text_dim"], bg=C["panel"],
