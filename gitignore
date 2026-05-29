@@ -1,0 +1,188 @@
+# =============================================================================
+# DUPFINDER — .gitignore
+# Duplicate File Finder | Enterprise Edition
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pyc
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+.virtualenv/
+.conda/
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# PyInstaller build artifacts
+*.spec
+build/
+dist/
+__pycache__/
+*.manifest
+
+# cx_Freeze
+cx_freeze_output/
+*.msi
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# -----------------------------------------------------------------------------
+# Application Runtime Files
+# -----------------------------------------------------------------------------
+# The app writes its data here — never commit user-specific logs/settings
+~/.duplicate_finder/
+*.log
+settings.json
+
+# -----------------------------------------------------------------------------
+# Testing & Coverage
+# -----------------------------------------------------------------------------
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# -----------------------------------------------------------------------------
+# IDEs & Editors
+# -----------------------------------------------------------------------------
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Spyder
+.spyderproject.db
+.spyproject/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+Session.vim
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# -----------------------------------------------------------------------------
+# Operating System Files
+# -----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+Icon
+*.dmg
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msp
+*.msm
+*.lnk
+
+# Linux
+.Trash-*
+.nfs*
+
+# UPX compressed artifacts
+*.upx
+
+# -----------------------------------------------------------------------------
+# Temporary & Misc
+# -----------------------------------------------------------------------------
+*.bak
+*.tmp
+*.temp
+*.orig
+*.rej
+*.old
+.scratch/
+TODO.local
+notes.local.md
+
+# Secrets / credentials — never commit these
+.env
+.env.*
+secrets.json
+credentials.json
